@@ -14,4 +14,7 @@ jobs:
           url: ${{ secrets.JENKINS_URL }}
           user: admin
           token: ${{ secrets.JENKINS_TOKEN }}
-          job: react-app-deploy
+          job: frontend_deploy
+
+
+
