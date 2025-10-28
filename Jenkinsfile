@@ -2,7 +2,6 @@ pipeline {
   agent any
 
   environment {
-    // Set Node.js version path (if using nvm or system node)
     NODE_HOME = '/usr/bin'
     PATH = "${NODE_HOME}:${PATH}"
     BUILD_DIR = 'build'
@@ -13,7 +12,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Cloning repository...'
-        git branch: 'main', url: 'https://github.com/yourusername/your-react-app.git'
+        git branch: 'main', url: 'https://github.com/Utsavojha2/jenkins_assignment.git'
       }
     }
 

@@ -11,7 +11,7 @@ jobs:
       - name: Trigger Jenkins Job
         uses: appleboy/jenkins-action@master
         with:
-          url: http://<EC2-Public-IP>:8080
+          url: ${{ secrets.JENKINS_URL }}
           user: admin
           token: ${{ secrets.JENKINS_TOKEN }}
           job: react-app-deploy
